@@ -5,18 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>us.piit</groupId>
-  <artifactId>Web-Automation-Framework</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>UnitedHealthCare</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>Generic</module>
-    <module>Amazon</module>
-    <module>Netflix</module>
-    <module>Walmart</module>
-    <module>UnitedHealthCare</module>
-  </modules>
 
-  <name>Web-Automation-Framework</name>
+  <name>UnitedHealthCare</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -26,25 +18,26 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.4.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-server</artifactId>
-        <version>4.0.0-alpha-2</version>
-      </dependency>
-      <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.0.0</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-api</artifactId>
+      <version>4.0.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <version>4.0.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
