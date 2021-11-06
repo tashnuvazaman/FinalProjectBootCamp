@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Netflix" />
+        <module name="Target" />
         <module name="Amazon" />
         <module name="Generic" />
         <module name="UnitedHealthCare" />
-        <module name="BedBathAndBeyond" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
