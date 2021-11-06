@@ -6,12 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class NetflixTesting {
+public class NetflixTesting  {
     public WebDriver driver;
 
     @Before
     @Test
-    public void Upset() throws InterruptedException {
+    public void NetflixTest() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\tasnu\\IdeaProjects\\web-automation-framework\\Generic\\drivers\\chromedriver.exe");
 
         driver = new ChromeDriver();

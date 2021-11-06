@@ -15,7 +15,7 @@ public class AmazonTesting {
 
     @Before
     @Test
-    public void Upset() throws InterruptedException {
+    public void Home() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\tasnu\\IdeaProjects\\web-automation-framework\\Generic\\drivers\\chromedriver.exe");
 
         driver = new ChromeDriver();
@@ -27,13 +27,10 @@ public class AmazonTesting {
 
 
 
-        driver.close();
+
 
 
     }
-
-
-
 
     @After
     public void after () {

@@ -29,7 +29,7 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("34")
-                              String browserVersion, @Optional("https://www.walmart.com") String url) throws IOException {
+                              String browserVersion, @Optional("https://www.amazon.com") String url) throws IOException {
 
         getLocalDriver(os, browserName);
 
@@ -42,9 +42,9 @@ public class CommonAPI {
     public WebDriver getLocalDriver (@Optional("mac") String OS, String browserName){
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/drivers/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\tasnu\\IdeaProjects\\web-automation-framework-team4\\Generic\\drivers\\chromedriver.exe");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/drivers/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\tasnu\\IdeaProjects\\web-automation-framework-team4\\Generic\\drivers\\chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {

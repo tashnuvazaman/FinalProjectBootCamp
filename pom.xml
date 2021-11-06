@@ -12,8 +12,8 @@
     <module>Generic</module>
     <module>Amazon</module>
     <module>Netflix</module>
-    <module>Walmart</module>
     <module>UnitedHealthCare</module>
+      <module>BedBathAndBeyond</module>
   </modules>
 
   <name>Web-Automation-Framework</name>
