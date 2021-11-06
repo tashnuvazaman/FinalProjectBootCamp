@@ -38,7 +38,7 @@ public class AmazonTestingP {
         driver.findElement(By.className("s-image")).click();
 //       Select dropdown = new Select( driver.findElement(By.className("a-icon a-icon-popover")));
 //       dropdown.selectByVisibleText("");
-
+//
 
 
 
