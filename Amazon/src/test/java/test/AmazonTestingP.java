@@ -2,8 +2,7 @@ package test;
 
 import org.junit.After;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -36,9 +35,18 @@ public class AmazonTestingP {
 
         driver.findElement(By.id("nav-search-submit-button")).click();
         driver.findElement(By.className("s-image")).click();
-//       Select dropdown = new Select( driver.findElement(By.className("a-icon a-icon-popover")));
-//       dropdown.selectByVisibleText("");
+        driver.findElement(By.xpath("//button[@id='a-autoid-14-announce']")).click();
+        driver.findElement(By.id("twotabsearchtextbox")).clear();
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Shiba Inu");
+        driver.findElement(By.id("nav-search-submit-button")).click();
+       // driver.findElement(By.className("a-size-medium a-color-base a-text-normal")).click();
+       // driver.findElement(By.xpath("//*[@id=\"p_76/2661625011\"]/span/a/div[1]/label/i")).click();
+        }
+
+//        WebElement testDropDown = driver.findElement(By.xpath("nav-search-submit-button"));
+//        Select dropdown = new Select(testDropDown);
 //
+//      dropdown.selectByIndex("quantity_2");
 
 
 
@@ -55,4 +63,3 @@ public class AmazonTestingP {
 //    public void after () {
 //        driver.quit();
 //    }
-}
