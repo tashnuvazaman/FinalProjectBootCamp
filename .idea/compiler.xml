@@ -14,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ABC" target="8" />
       <module name="Bestbuy" target="1.7" />
       <module name="CNN" target="1.7" />
       <module name="Ebay" target="1.7" />
