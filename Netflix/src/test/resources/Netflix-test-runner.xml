@@ -12,7 +12,8 @@
     <test name = "smloke Amazon search">
         <classes>
             <!--<class name="test.HomeTest"/>-->
-            <class name="NetflixTesting"/>
+            <class name="Test.SignIn"/>
+
         </classes>
     </test>
 

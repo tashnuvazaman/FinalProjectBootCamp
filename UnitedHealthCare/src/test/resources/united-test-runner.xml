@@ -12,7 +12,8 @@
     <test name = "smloke Amazon search">
         <classes>
             <!--<class name="test.HomeTest"/>-->
-            <class name="Test.UntedHealthCareTesting"/>
+            <class name="Test.HomePage"/>
+
         </classes>
     </test>
 
