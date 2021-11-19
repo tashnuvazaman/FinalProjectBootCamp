@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
-<suite name="Amazon Automation Scipt" parallel="false">
+<suite name="Amazon Automation Script" parallel="false">
 
     <!--cloud parameters-->
     <parameter name="useCloudEnv" value="false"/>

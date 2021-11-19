@@ -1,15 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
-<suite name="Amazon Automation Scipt" parallel="false">
+<suite name="Netflix Automation Script" parallel="false">
 
-    <!--<parameter name="useCloudEnv" value="flase"/>-->
-    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <!--cloud parameters-->
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserVersion" value="94"/>
+    <!--both cloud local parameters-->
     <parameter name="os" value="Windows"/>
-    <!--<parameter name="os_version" value="Sierra"/>-->
     <parameter name="browserName" value="chrome"/>
-    <!--<parameter name="browserVersion" value="65.0"/>-->
-    <parameter name="url" value="https://www.Netflix.com"/>
 
-    <test name = "smloke Amazon search">
+    <parameter name="url" value="https://www.netflix.com"/>
+
+    <test name = "smoke testing Netflix search">
         <classes>
             <!--<class name="test.HomeTest"/>-->
             <class name="Test.SignIn"/>

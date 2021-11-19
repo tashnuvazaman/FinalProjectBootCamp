@@ -1,19 +1,21 @@
 <!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
-<suite name="Amazon Automation Scipt" parallel="false">
+<suite name="United Health Care Automation Script" parallel="false">
 
-    <!--<parameter name="useCloudEnv" value="flase"/>-->
-    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <!--cloud parameters-->
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserVersion" value="94"/>
+    <!--both cloud local parameters-->
     <parameter name="os" value="Windows"/>
-    <!--<parameter name="os_version" value="Sierra"/>-->
     <parameter name="browserName" value="chrome"/>
-    <!--<parameter name="browserVersion" value="65.0"/>-->
+
     <parameter name="url" value="https://www.uhc.com"/>
 
-    <test name = "smloke Amazon search">
+    <test name = "smoke testing United Health Care search">
         <classes>
             <!--<class name="test.HomeTest"/>-->
             <class name="Test.HomePage"/>
-
         </classes>
     </test>
 

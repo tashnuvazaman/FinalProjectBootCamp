@@ -80,7 +80,7 @@ public class CommonAPI {
         }
         return driver;
     }
-    @AfterMethod
+   // @AfterMethod
     public void afterMethod () {
         driver.quit();
     }
