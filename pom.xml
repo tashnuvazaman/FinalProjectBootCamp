@@ -14,7 +14,7 @@
     <module>Netflix</module>
     <module>UnitedHealthCare</module>
       <module>BedBathAndBeyond</module>
-    <module>ABC</module>
+
   </modules>
 
   <name>Web-Automation-Framework</name>
